@@ -8,7 +8,7 @@ class ListsController < ApplicationController
 
   def create
     @list = current_user.lists.build(strong_params)
-    redirect_to @list if @list.save
+    redirect_to @list if @list.sav
   end
 
   def edit
